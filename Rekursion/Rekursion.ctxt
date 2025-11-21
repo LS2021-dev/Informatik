@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Rekursion
+comment1.params=n
+comment1.target=int\ fak_it(int)
+comment2.params=n
+comment2.target=int\ fak_rek(int)
+comment3.params=n
+comment3.target=int\ fib_rek(int)
+numComments=4

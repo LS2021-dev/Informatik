@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Datenknoten
+comment1.params=de
+comment1.target=Datenknoten(Datenelement)
+comment2.params=de
+comment2.target=void\ einfuegen(Datenelement)
+comment3.params=
+comment3.target=void\ listeDrucken()
+numComments=4

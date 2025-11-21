@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Datenelement
+comment1.params=s
+comment1.target=Datenelement(java.lang.String)
+comment2.params=
+comment2.target=void\ druckeDich()
+comment3.params=de
+comment3.target=boolean\ istKleiner(Datenelement)
+comment4.params=de
+comment4.target=boolean\ istGleich(Datenelement)
+numComments=5

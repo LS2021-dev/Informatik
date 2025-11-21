@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=HanoiStapel
+comment1.params=maxHoehe
+comment1.target=HanoiStapel(int)
+comment2.params=
+comment2.target=int\ entnehmen()
+comment3.params=n
+comment3.target=boolean\ einfuegen(int)
+comment4.params=n
+comment4.target=void\ druckeScheibeAnPosition(int)
+numComments=5

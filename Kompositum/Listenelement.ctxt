@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Listenelement
+comment1.params=de
+comment1.target=Listenelement\ einfuegen(Datenelement)
+comment2.params=de
+comment2.target=Listenelement\ sortiertEinfuegen(Datenelement)
+comment3.params=
+comment3.target=int\ laengeBestimmen()
+comment4.params=
+comment4.target=Listenelement\ gibNaechster()
+comment5.params=
+comment5.target=Datenelement\ gibInhalt()
+comment6.params=de
+comment6.target=Datenelement\ erstesSuchen(Datenelement)
+comment7.params=de
+comment7.target=Listenelement\ entfernen(Datenelement)
+comment8.params=de\ ergebnisListe
+comment8.target=Liste\ multiSuche(Datenelement,\ Liste)
+comment9.params=
+comment9.target=void\ listeDrucken()
+numComments=10

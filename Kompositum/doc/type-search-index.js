@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Abschluss"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"Datenelement"},{"p":"<Unnamed>","l":"Datenknoten"},{"p":"<Unnamed>","l":"Liste"},{"p":"<Unnamed>","l":"Listenelement"},{"p":"<Unnamed>","l":"ListenTest"},{"p":"<Unnamed>","l":"Tools"}]
