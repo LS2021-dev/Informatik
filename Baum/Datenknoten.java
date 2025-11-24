@@ -1,9 +1,9 @@
-public class Datenknoten extends Listenelement
+public class Datenknoten extends Baumelement
 {
-    private Listenelement naechster;
+    private Baumelement naechster;
     private Datenelement inhalt;
 
-    public Datenknoten (Datenelement de, Listenelement na){
+    public Datenknoten (Datenelement de, Baumelement na){
         inhalt = de;
         naechster = na;
     }
@@ -12,7 +12,7 @@ public class Datenknoten extends Listenelement
         return inhalt;
     }
 
-    public Listenelement sortiertEinfuegen(Datenelement de) {
+    public Baumelement sortiertEinfuegen(Datenelement de) {
         if (de.istKleiner(inhalt)) {
             return new Datenknoten(de, this);
         } else {

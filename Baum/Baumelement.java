@@ -1,5 +1,5 @@
-public abstract class Listenelement {
-    public abstract Listenelement sortiertEinfuegen(Datenelement de);
+public abstract class Baumelement {
+    public abstract Baumelement sortiertEinfuegen(Datenelement de);
 
     public abstract Datenelement gibInhalt();
     

@@ -1,6 +1,6 @@
 public class Baum
 {
-    private Listenelement erster;
+    private Baumelement erster;
 
     public Baum() {
         erster = new Abschluss();

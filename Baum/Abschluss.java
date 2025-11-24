@@ -1,9 +1,9 @@
-public class Abschluss extends Listenelement {
+public class Abschluss extends Baumelement {
     public Datenelement gibInhalt() {
         return null;
     }
 
-    public Listenelement sortiertEinfuegen(Datenelement de) {
+    public Baumelement sortiertEinfuegen(Datenelement de) {
         return new Datenknoten (de, this);
     }
 
