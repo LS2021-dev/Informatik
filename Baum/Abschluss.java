@@ -4,7 +4,7 @@ public class Abschluss extends Baumelement {
     }
 
     public Baumelement sortiertEinfuegen(Datenelement de) {
-        return new Datenknoten (de, this);
+        return new Datenknoten (de, this, this);
     }
 
     public Datenelement erstesSuchen(Datenelement de) {

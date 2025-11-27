@@ -1,11 +1,13 @@
 public class Datenknoten extends Baumelement
 {
-    private Baumelement naechster;
+    private Baumelement astLinks;
+    private Baumelement astRechts;
     private Datenelement inhalt;
 
-    public Datenknoten (Datenelement de, Baumelement na){
+    public Datenknoten (Datenelement de, Baumelement al, Baumelement ar){
         inhalt = de;
-        naechster = na;
+        astLinks = al;
+        astRechts = ar;
     }
 
     public Datenelement gibInhalt() {
@@ -13,19 +15,24 @@ public class Datenknoten extends Baumelement
     }
 
     public Baumelement sortiertEinfuegen(Datenelement de) {
-        if (de.istKleiner(inhalt)) {
-            return new Datenknoten(de, this);
+        if (de.istGleich(inhalt)) {
+            schreibe("Einfügen nicht möglich! Element " + inhalt.name + " vorhanden!");
+        } else if (de.istKleiner(inhalt)) {
+            astLinks = astLinks.sortiertEinfuegen(de);
         } else {
-            naechster = naechster.sortiertEinfuegen(de);
-            return this;
+            astRechts = astRechts.sortiertEinfuegen(de);
         }
+        return this;
     }
 
     public Datenelement erstesSuchen(Datenelement de) {
         if (de.istGleich(inhalt)) {
             return inhalt;
+        }
+        if (de.istKleiner(inhalt)) {
+            return astLinks.erstesSuchen(de);
         } else {
-            return naechster.erstesSuchen(de);
+            return astRechts.erstesSuchen(de);
         }
     }
 }

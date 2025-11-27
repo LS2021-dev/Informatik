@@ -1,9 +1,9 @@
 public class Baum
 {
-    private Baumelement erster;
+    private Baumelement wurzel;
 
     public Baum() {
-        erster = new Abschluss();
+        wurzel = new Abschluss();
     }
 
     public void sortiertEinfuegen (String s) {
@@ -11,7 +11,7 @@ public class Baum
     }
 
     public void sortiertEinfuegen (Datenelement de){
-        erster = erster.sortiertEinfuegen(de);
+        wurzel = wurzel.sortiertEinfuegen(de);
     }
 
     public Datenelement erstesSuchen(String s) {
@@ -19,6 +19,6 @@ public class Baum
     }
 
     public Datenelement erstesSuchen(Datenelement de) {
-        return erster.erstesSuchen(de);
+        return wurzel.erstesSuchen(de);
     }
 }

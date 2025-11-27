@@ -1,4 +1,4 @@
-public abstract class Baumelement {
+public abstract class Baumelement extends Tools {
     public abstract Baumelement sortiertEinfuegen(Datenelement de);
 
     public abstract Datenelement gibInhalt();
