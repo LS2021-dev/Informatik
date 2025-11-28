@@ -21,4 +21,8 @@ public class Baum
     public Datenelement erstesSuchen(Datenelement de) {
         return wurzel.erstesSuchen(de);
     }
+
+    public void traversieren(String art) {
+        wurzel.traversieren(art);
+    }
 }

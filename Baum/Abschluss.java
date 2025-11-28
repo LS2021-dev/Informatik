@@ -10,4 +10,8 @@ public class Abschluss extends Baumelement {
     public Datenelement erstesSuchen(Datenelement de) {
         return null;
     }
+
+    public void traversieren (String art) {
+
+    }
 }

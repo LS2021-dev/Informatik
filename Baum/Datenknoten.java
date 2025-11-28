@@ -35,5 +35,27 @@ public class Datenknoten extends Baumelement
             return astRechts.erstesSuchen(de);
         }
     }
+
+    public void traversieren(String art) {
+        switch (art) {
+            case "preorder":
+                schreibe(inhalt.name);
+                astLinks.traversieren(art);
+                astRechts.traversieren(art);
+                break;
+            case "inorder":
+                astLinks.traversieren(art);
+                schreibe(inhalt.name);
+                astRechts.traversieren(art);
+                break;
+            case "postorder":
+                astLinks.traversieren(art);
+                astRechts.traversieren(art);
+                schreibe(inhalt.name);
+                break;
+            default:
+                schreibe("Ungültige Traversierungsart! Verwende 'preorder', 'inorder' oder 'postorder'!");
+        }
+    }
 }
 
