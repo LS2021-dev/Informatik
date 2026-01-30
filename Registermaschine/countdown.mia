@@ -1,0 +1,10 @@
+LOADI 10
+STORE i
+schleife:
+LOAD i
+SUBI 1
+STORE i
+JMPP schleife
+HOLD
+
+i: WORD 0
