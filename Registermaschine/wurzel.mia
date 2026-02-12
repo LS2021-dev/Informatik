@@ -1,0 +1,33 @@
+LOADI 1
+STORE w
+
+LOADI 11
+STORE r
+
+loop:
+LOAD w
+MUL w
+CMP r
+JMPNN raus
+LOAD w
+ADDI 1
+STORE w
+JMP loop
+
+raus:
+LOAD w
+MUL w
+SUB r
+CMP w
+JMPP ende
+HOLD
+
+ende:
+LOAD w
+SUBI 1
+STORE w
+HOLD
+
+
+w: WORD 0
+r: WORD 0
