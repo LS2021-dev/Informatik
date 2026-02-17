@@ -1,0 +1,32 @@
+LOADI 66
+STORE 100
+
+LOADI 17
+STORE 200
+
+loop:
+LOAD i
+ADDI 1
+STORE i
+ADDI 99
+STORE b
+LOAD (b)
+CMPI 10
+JMPNP loop
+
+LOAD i
+ADDI 199
+STORE p
+LOAD (p)
+MULI 95
+DIVI 100
+STORE (p)
+
+LOAD i
+CMPI 40
+JMPN loop
+
+
+i: word 0
+b: word 0
+p: word 0
