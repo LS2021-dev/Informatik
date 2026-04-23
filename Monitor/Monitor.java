@@ -1,0 +1,22 @@
+public class Monitor
+{
+    private Puffer puf;
+    private Erzeuger[] e;
+    private Verbraucher[] v;
+    
+    public Monitor () {
+        puf = new Puffer(10);
+        e = new Erzeuger[1000];
+        v = new Verbraucher[1000];
+        
+        for (int i=0; i<10; i++) {
+            e[i] = new Erzeuger("Erzeuger " + i, puf);
+            e[i].start();
+        }
+        
+        for (int i=0; i<10; i++) {
+            v[i] = new Verbraucher("Verbraucher " + i, puf);
+            v[i].start();
+        }
+    }
+}
