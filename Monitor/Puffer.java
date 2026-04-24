@@ -3,6 +3,7 @@ public class Puffer
     private Objekt[] p;
     private int in;
     private int out;
+    public boolean debug = true;
 
     public Puffer (int groesse) {
         p = new Objekt[groesse];
@@ -10,8 +11,21 @@ public class Puffer
         out = 0;
     }
     
+    public synchronized void zeigePuffer() {
+        String label;
+        for (int i = 0; i < p.length; i++) {
+            label = "    ";
+            if (i == in) label = " IN>";
+            if (i == out) label = "OUT>";
+            if ((in == out) && (i == in)) label = "FULL";
+            System.out.print(label + " " + i + ": ");
+            if (p[i] != null) System.out.print(p[i].inhalt);
+            System.out.println();
+        }
+    }
+    
     public void schreibe(String s) {
-        System.out.println(System.nanoTime() + ": " + s);
+        if (debug) System.out.println(System.nanoTime() + ": " + s);
     }
     
     public void status() {

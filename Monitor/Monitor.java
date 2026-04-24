@@ -19,4 +19,12 @@ public class Monitor
             v[i].start();
         }
     }
+    
+    public void toggleDebug() {
+        puf.debug = !puf.debug;
+    }
+    
+    public void zeigePuffer() {
+        puf.zeigePuffer();
+    }
 }
