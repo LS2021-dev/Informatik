@@ -12,7 +12,7 @@ public class Erzeuger extends Thread
     
     public void run() {
         while (true) {
-            puf.einfuegen(new Objekt(name + " Nr. " + seq++));
+            puf.einfuegen(name, new Objekt(name + " Nr. " + seq++));
         }
     }
 }

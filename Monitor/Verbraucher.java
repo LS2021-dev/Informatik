@@ -12,8 +12,7 @@ public class Verbraucher extends Thread
     public void run() {
         String s;
         while (true) {
-            s = puf.entnehmen().inhalt;
-            System.out.println(name + " entnahm " + s);
+            s = puf.entnehmen(name).inhalt;
         }
     }
 }
